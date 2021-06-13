@@ -8,7 +8,3 @@ class Departament:
 
     def get_teachers(self):
         return self.__teachers
-
-
-dep1 = Departament("EST", "juju")
-dep1.add_teacher("juju")
