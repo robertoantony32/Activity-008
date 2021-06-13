@@ -5,7 +5,10 @@ class Departament:
 
     def add_teacher(self, new_teacher):
         self.__teachers.append(new_teacher)
-        set(self.__teachers)
 
     def get_teachers(self):
         return self.__teachers
+
+
+dep1 = Departament("EST", "juju")
+dep1.add_teacher("juju")
