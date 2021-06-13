@@ -1,4 +1,3 @@
-from typing import SupportsAbs
 from Departament import Departament
 from Subject import Subject
 from Teacher import Teacher
@@ -40,5 +39,5 @@ print(university_1.get_name())
 for departament in university_1.get_departaments():
     print(departament.get_name())
     for teacher in departament.get_teachers():
-        print(teacher.name, [x.name for x in teacher.subjects])
+        print(teacher.get_name(), [x.get_name() for x in teacher.get_subjects()])
     print()
