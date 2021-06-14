@@ -16,23 +16,17 @@ subject_3 = Subject("m3")
 subject_4 = Subject("m4")
 
 teacher_1.add_subjects(subject_1)
-teacher_1.add_subjects(subject_2)
 
-teacher_2.add_subjects(subject_4)
 teacher_2.add_subjects(subject_2)
 
-teacher_3.add_subjects(subject_2)
+teacher_3.add_subjects(subject_4)
 teacher_3.add_subjects(subject_3)
 
 
 departament_1 = Departament("EST", teacher_1)
 departament_1.add_teacher(teacher_2)
+departament_1.add_teacher(teacher_3)
 university_1.add_departament(departament_1)
-
-departament_2 = Departament("ESO", teacher_1)
-departament_2.add_teacher(teacher_3)
-university_1.add_departament(departament_2)
-
 
 print(university_1.get_name())
 
